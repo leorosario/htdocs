@@ -1,0 +1,24 @@
+@import 'fonts/fontawesome.min.css';
+@import 'fonts/montserrat.css';
+@import 'reset/reset.css';
+@import 'reset/header.css';
+@import 'reset/caminho.css';
+@import 'reset/footer.css';
+
+@import 'blocos/slider_banner.css';
+@import 'blocos/nossos_servicos.css';
+@import 'blocos/call_to_action.css';
+@import 'blocos/quem_somos.css';
+@import 'blocos/avaliacoes.css';
+@import 'blocos/marcas.css';
+@import 'blocos/noticias.css';
+@import 'blocos/quem_somos_2.css';
+@import 'blocos/contator.css';
+@import 'blocos/time.css';
+@import 'blocos/servico.css';
+@import 'blocos/galeria_fotos.css';
+@import 'blocos/paginacao.css';
+@import 'blocos/formulario_orcamento.css';
+@import 'blocos/blog.css';
+@import 'blocos/videos.css';
+@import 'blocos/fale_conosco.css';

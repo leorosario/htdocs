@@ -1,0 +1,116 @@
+.nossos_servicos{
+    width: 100%;
+    display: block;
+    padding: 80px 0px;
+    background-color: #292929;
+}
+
+.nossos_servicos .container{
+    max-width: 1490px;
+}
+
+.nossos_servicos .conteudo .texto .descricao{
+    max-width: 690px;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.nossos_servicos .conteudo .itens{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.nossos_servicos .conteudo .itens .item{
+    width: 100%;
+    display: inline-block;    
+}
+
+.nossos_servicos .conteudo .itens .item a{
+    width: 100%;
+    display: block;
+}
+
+.nossos_servicos .conteudo .itens .item .img,
+.nossos_servicos .conteudo .itens .item .img img{
+    width: 100%;
+    display: block;
+}
+
+.nossos_servicos .conteudo .itens .item a .informacoes{
+    background-color: #000;
+    padding: 20px;
+    margin: -40px 20px 0px;
+    width: calc(100% - 40px);
+    position: relative;
+    z-index: 1;
+}
+
+.nossos_servicos .conteudo .itens .item a .informacoes .titulo{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--font-family-bold);
+    margin-bottom: 25px;
+}
+
+.nossos_servicos .conteudo .itens .item a .informacoes .titulo:after{
+    background-color: var(--color-white);
+    bottom: -5px;
+}
+
+.nossos_servicos .conteudo .itens .item a .informacoes .descricao{
+    margin-bottom: 25px;
+}
+
+.nossos_servicos .conteudo .itens .item a .informacoes .btn{
+    font-size: 20px;
+    color: var(--color-destaque);
+    text-decoration: underline;
+    font-family: var(--font-family-bold);
+    padding: 0px;
+    background-color: transparent;
+    margin: 0;
+    border: 0px;
+    text-transform: initial;
+    transition: var(--transition-time);
+}
+
+.nossos_servicos .conteudo .itens .item:hover > a .informacoes .btn{
+    color: var(--color-hover);    
+}
+
+.nossos_servicos.listagem .conteudo .itens .item{
+    margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px){
+    .nossos_servicos:not(.listagem) .conteudo .itens .item{      
+        padding: 0px 40px;
+    }
+
+    .nossos_servicos.listagem .conteudo .itens .item{
+        width: calc(50% - 35px);
+        margin-right: 70px;
+    }
+
+    .nossos_servicos.listagem .conteudo .itens .item:nth-child(2n+2){        
+        margin-right: 0px;
+    }   
+}
+
+@media only screen and (min-width: 1024px){
+    .nossos_servicos.listagem .conteudo .itens .item{
+        width: calc(33.3333333% - 46.666667px);
+        margin-right: 70px;
+    }
+
+    .nossos_servicos.listagem .conteudo .itens .item:nth-child(2n+2){        
+        margin-right: 70px;
+    } 
+    
+    .nossos_servicos.listagem .conteudo .itens .item:nth-child(3n+3){        
+        margin-right: 0px;
+    } 
+}

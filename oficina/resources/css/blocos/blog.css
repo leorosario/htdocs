@@ -1,0 +1,139 @@
+.blog{
+    width: 100%;
+    display: block;
+    padding: 95px 0;
+}
+
+.blog .conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog .conteudo .noticia{
+    width: 100%;
+    display: block;
+}
+
+.blog .conteudo .noticia p{
+    margin-bottom: 25px;
+}
+
+.blog .conteudo .noticia img{
+    width: 100%;
+    display: block;
+}
+
+.blog .conteudo .listagem{
+    width: 100%;
+    display: block;
+}
+
+.blog .conteudo .listagem .titulo{
+    margin-bottom: 84px;
+}
+
+.blog .conteudo .titulo{
+    font-size: 24px;
+}
+
+.blog .conteudo .listagem .data{
+    font-size: 16px;
+    font-family: var(--font-family-medium);
+    margin-bottom: 25px;
+}
+
+.blog .conteudo .listagem img{
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.blog .conteudo .listagem .itens{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog .conteudo .listagem .itens .item{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 35px;  
+}
+
+.blog .conteudo .listagem .itens .item a{
+    width: 100%;
+    display: block;
+}
+
+.blog .conteudo .listagem .itens .item .img,
+.blog .conteudo .listagem .itens .item .img img{
+    width: 100%;
+    display: block;
+}
+
+.blog .conteudo .listagem .itens .item a .informacoes{
+    background-color: #000;
+    padding: 20px;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--color-white);
+}
+
+.blog .conteudo .listagem .itens .item a .informacoes .data{
+    position: absolute;
+    right: 0;
+    top: -30px;
+    line-height: 30px;
+    width: max-content;
+    padding: 0 10px;
+    background-color: var(--color-destaque);
+}
+
+.blog .conteudo .listagem .itens .item a .informacoes .titulo{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--font-family-bold);
+    margin-bottom: 25px;
+}
+
+.blog .conteudo .listagem .itens .item a .informacoes .titulo:after{
+    display: none;
+}
+
+.blog .conteudo .listagem .itens .item a .informacoes .descricao{
+    margin-bottom: 25px;
+}
+
+.blog .conteudo .listagem .itens .item a .informacoes .btn{
+    font-size: 20px;
+    color: var(--color-destaque);
+    text-decoration: underline;
+    font-family: var(--font-family-bold);
+    padding: 0px;
+    background-color: transparent;
+    margin: 0;
+    border: 0px;
+    text-transform: initial;
+    transition: var(--transition-time);
+}
+
+.blog .conteudo .listagem .itens .item:hover > a .informacoes .btn{
+    color: var(--color-hover);    
+}
+
+@media only screen and (min-width: 1024px){
+    .blog .conteudo .noticia{
+        width: 66%;        
+    }
+
+    .blog .conteudo .listagem{
+        width: 30%;        
+    }
+}

@@ -1,0 +1,163 @@
+.fale-conosco{
+    width: 100%;
+    display: block;
+    padding: 80px 0;
+}
+
+.fale-conosco .conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.fale-conosco .conteudo .form,
+.fale-conosco .conteudo .contatos,
+.fale-conosco .conteudo .mapa{
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+
+.fale-conosco .conteudo .mapa iframe{
+    width: 100%;
+    height: 470px;
+}
+
+.fale-conosco .conteudo .form{
+    padding: 25px;
+    background-color: #292929;
+}
+
+.fale-conosco .conteudo .form h2{
+    margin-bottom: 20px;
+}
+
+.fale-conosco .conteudo .form h2:after{
+    display: none;
+}
+
+.fale-conosco .conteudo .form form .campo.recaptcha{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.fale-conosco .conteudo .form form .campo.botao{
+    margin-bottom: 0px;
+}
+
+.fale-conosco .conteudo .contatos{
+    margin-top: 40px;
+    padding: 25px;
+    border: 1px solid var(--color-white);
+}
+
+.fale-conosco .conteudo .contatos h3:after{
+    display: none;
+}
+
+.fale-conosco .conteudo .contatos .item{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.fale-conosco .conteudo .contatos .item:last-child{
+    margin-bottom: 0px;
+}
+
+.fale-conosco .conteudo .contatos .item .icone{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-destaque);
+    text-align: center;
+    margin-right: 15px;
+}
+
+.fale-conosco .conteudo .contatos .item .icone i{
+    font-size: 18px;
+    line-height: 40px;
+    transition: var(--transition-time);
+}
+
+.fale-conosco .conteudo .contatos .item .info{
+    width: calc(100% - 55px);
+}
+
+.fale-conosco .conteudo .contatos .item .info h4{
+    font-size: 18px;
+    font-family: var(--font-family-bold);
+}
+
+.fale-conosco .conteudo .contatos .item .info a{
+    display: block;
+    width: 100%;
+    transition: var(--transition-time);
+}
+
+.fale-conosco .conteudo .contatos .item:hover > .icone i,
+.fale-conosco .conteudo .contatos .item:hover > .info a{
+    color: var(--color-hover);
+}
+
+.fale-conosco .conteudo .contatos .redes-sociais{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.fale-conosco .conteudo .contatos .redes-sociais a{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0px 12px 0 0;
+    background-color: var(--color-destaque);
+    text-align: center;
+}
+
+.fale-conosco .conteudo .contatos .redes-sociais a i{
+    font-size: 16px;
+    line-height: 35px;
+    transition: var(--transition-time);
+}
+
+.fale-conosco .conteudo .contatos .redes-sociais a:hover > i{
+    color: var(--color-hover);    
+}
+
+@media only screen and (min-width: 768px){
+    .fale-conosco .conteudo .form form .campo.nome,
+    .fale-conosco .conteudo .form form .campo.telefone,
+    .fale-conosco .conteudo .form form .campo.email,
+    .fale-conosco .conteudo .form form .campo.assunto{
+        width: 49%;
+    }
+
+    .fale-conosco .conteudo .form form .campo.recaptcha,
+    .fale-conosco .conteudo .form form .campo.botao{
+        width: max-content;
+        max-width: 50%;
+    }    
+}
+
+@media only screen and (min-width: 1024px){
+    .fale-conosco .conteudo .form{
+        width: 60%;
+    }
+
+    .fale-conosco .conteudo .contatos{
+        width: 36%;
+        margin-top: 0px;
+    }
+
+    .fale-conosco .conteudo .contatos h3{
+        font-size: 24px;
+    }
+}

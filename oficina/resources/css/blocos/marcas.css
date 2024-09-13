@@ -1,0 +1,49 @@
+.marcas,
+.marcas .conteudo,
+.marcas .conteudo .itens,
+.marcas .conteudo .itens .item a,
+.marcas .conteudo .itens .item a img{
+    width: 100%;
+    display: block;
+}
+
+.marcas{
+    background-color: #292929;
+    padding: 80px 0;
+}
+
+.marcas .conteudo .itens .item{
+    width: 100%;
+    display: inline-block;
+}
+
+.marcas .conteudo .itens .item a img{
+    max-height: 150px;
+    width: auto;
+    max-width: 100%;
+    filter: grayscale(100%);
+    transition: .30s;
+}
+
+.marcas .conteudo .itens .item:hover a img{
+    filter: grayscale(0%);
+}
+
+.marcas .conteudo .itens .slick-arrow{
+    position: absolute;
+    z-index: 1;
+    top: calc(50px - 20px);    
+    font-size: 30px;
+}
+
+.marcas .conteudo .itens .slick-arrow i:before{
+    color: var(--color-white);
+}
+
+.marcas .conteudo .itens .slick-arrow.slick-prev{
+    left: 25px;
+}
+
+.marcas .conteudo .itens .slick-arrow.slick-next{
+    right: 25px;
+}

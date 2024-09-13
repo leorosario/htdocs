@@ -1,0 +1,104 @@
+.time{
+    width: 100%;
+    display: block;
+    padding: 80px 0;
+    background-color: #292929;
+}
+
+.time .conteudo{
+    width: 100%;
+    display: block;
+}
+
+.time .conteudo .itens{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.time .conteudo .itens .item{
+    width: 100%;
+    display: block;
+    margin-bottom: 35px;
+}
+
+.time .conteudo .itens .item .img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.time .conteudo .itens .item .img img{
+    width: 100%;
+    display: block;
+}
+
+.time .conteudo .itens .item .img .redes-sociais{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-destaque);
+    padding: 18px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.time .conteudo .itens .item .img .redes-sociais a{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-white);
+    margin-right: 20px;
+}
+
+.time .conteudo .itens .item .img .redes-sociais a:last-child{
+    margin-right: 0px;
+}
+
+.time .conteudo .itens .item .img .redes-sociais a i{
+    line-height: 25px;
+    width: 23px;
+    text-align: center;
+}
+
+.time .conteudo .itens .item h3{
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--font-family-bold);
+    margin: 15px 0px 12px 0px;
+    line-height: 1;
+}
+
+.time .conteudo .itens .item h4{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    .time .conteudo .itens .item{
+        width: calc(50% - 35px);
+        margin-right: 70px;
+    }
+
+    .time .conteudo .itens .item:nth-child(2n+2){        
+        margin-right: 0px;
+    }   
+}
+
+@media only screen and (min-width: 1024px){
+    .time .conteudo .itens .item{
+        width: calc(33.3333333% - 46.666667px);
+        margin-right: 70px;
+    }
+
+    .time .conteudo .itens .item:nth-child(2n+2){        
+        margin-right: 70px;
+    } 
+    
+    .time .conteudo .itens .item:nth-child(3n+3){        
+        margin-right: 0px;
+    } 
+}
